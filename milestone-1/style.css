@@ -1,0 +1,947 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ }
+ 
+ body {
+    background-color: #b3e6e2ba;
+    border-bottom: #4b862f;
+ }
+ 
+ #top {
+    background-color: #434343;
+    text-align: center;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: #d1d8da;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+ }
+ 
+ #main-div {
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    position: relative;
+    padding: 1rem;
+    flex-wrap: wrap;
+ }
+ 
+ #main-div::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #54b8a4;
+    clip-path: polygon(0 100%, 100% 100%, 0 0); 
+    z-index: -1; 
+ }
+ 
+ #left-div, #right-div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 5rem;
+ }
+ 
+ #left-div {
+    background-color: #54b8a4 ;
+    height: auto;
+    width: 40%;
+    max-width: 300px;
+    border: none;
+    margin-right: 0;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
+ }
+ 
+ #right-div {
+    background-color: #c1efebbc;
+    height: auto;
+    width: 48%;
+    max-width: 550px;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.3);
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+ }
+ 
+ #img-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .img {
+    width: 80%;
+    height: 90%;
+    border: 2px solid black;
+    border-radius: 50%;
+    
+ }
+ 
+ 
+ #left-div-data{
+    background-color: #7c6565; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+ }
+ 
+ .about,  .contact {
+    color: #B68F40;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    width: 90%;
+    font-size: 1.5rem;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #00000099;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+    margin-bottom: 1rem;
+ }
+ 
+ 
+ .me, .sk {
+    padding: 1rem;
+    color: white;
+    text-align: start;
+    font-size: 1.3rem; 
+    line-height: 20px;
+    padding-top: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ 
+ .sk{
+    margin-bottom: 1rem;
+    margin-left: 7%;
+    line-height: 2rem;
+    font-size: 1.5rem;
+ }
+ 
+ #phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    
+ }
+ 
+ .contact-me{
+    display: flex;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    margin: 2px auto;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 90%;
+ }
+ .name-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 90%; 
+    position: relative; 
+ }
+ 
+ .fname {
+    color: #272525; 
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight: 700; 
+    font-size: 6vw; 
+    margin: 0; 
+    padding: 1rem 0; 
+    position: relative; 
+ }
+ 
+ .lname {
+    color: #4d4d4d; 
+    font-style: normal; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-weight: 500; 
+    font-size: 4vw; 
+    margin: 0; 
+    text-transform: capitalize; 
+    text-align: right; 
+    letter-spacing: 0.3rem; 
+    padding: 1rem 0; 
+    width: 100%; 
+ }
+ 
+ 
+ .line {
+    width: 100%;
+    height: 0.4rem;
+    background-color: #256031;
+ }
+ 
+ 
+ 
+ .fa-solid{
+    margin-right: 5%
+ }
+ 
+ .right-div-data{
+ display: flex;
+ flex-direction: column;
+ margin-top: 1.5rem;
+ width: 100%;
+ }
+ 
+ .edu , .sk-head {
+    color: #222020;
+    font-size: 2.5rem; 
+    width: 80%;
+    border-bottom: 1px solid rgb(37, 114, 139);
+    text-align: left;
+ }
+ 
+ 
+ .right-upper, .edu , .sk-head , #skill-div{
+    margin-left: 1rem;
+ }
+ .study {
+    color: rgb(58, 53, 53);
+    font-size: 1.6rem; 
+    width: 90%;
+    text-align: start;
+  margin-top: 1.5rem;
+ }
+ .schl {
+    color: rgb(91, 89, 89);
+    font-size: 1.3rem;
+    width: 90%;
+    text-align: left;
+    font-style: oblique;
+    margin-top: 0.5rem;
+ }
+ 
+ 
+ .language-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto;
+ }
+ 
+ .language {
+    margin-bottom: 1rem;
+ }
+ 
+ .language-name {
+    color: rgb(244, 244, 244);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+ }
+ 
+ .progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 0.2rem;
+ }
+ 
+ .progress {
+    height: 100%;
+    text-align: center;
+    color: white;
+    line-height: 0.5rem;
+    border-radius: 5px;
+ }
+ 
+ .english {
+    width: 80%;
+    background-color: #3498DB;
+ }
+ 
+ .urdu {
+    width: 100%;
+    background-color: #3498DB; 
+ }
+ 
+ .pashto {
+    width: 100%;
+    background-color:  #3498DB;
+ }
+ 
+ .sindhi {
+    width: 40%;
+    background-color: #3498DB; 
+ }
+ 
+ 
+ .toggle-section {
+    transition: max-height 0.5s ease; 
+    overflow: hidden;
+    max-height: 0; 
+ }
+ 
+ 
+ .show-skills {
+    max-height: 1000px; 
+ }
+ 
+ #toggle-btn {
+    background-color: #1ABC9C;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+ }
+ 
+ #toggle-btn:hover {
+    background-color: #1ABC9C;
+    box-shadow: 0 0 20px #1ABC9C;
+ }
+ 
+ .sk-head{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+   
+ }
+ 
+ .progress-skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 90%;
+ }
+ 
+ .progress-skill-bar {
+    width: 80%;
+    background-color: #ffffff; 
+    border-radius: 3px;
+    overflow: hidden;
+    height: 10px;
+    position: relative; 
+ }
+ 
+ .progress-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color:  #40746efc;
+ }
+ 
+ .progress-skill span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    flex-basis: 20%;
+    text-align: left;
+    margin-right: 1rem;
+ }
+ 
+ 
+ @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    #left-div, #right-div {
+       box-sizing: border-box;
+    }
+ 
+    #left-div {
+       height: auto;
+       width: 40%;
+       max-width: 300px;
+       
+       margin-right: 0;
+    
+    
+    }
+    
+    #right-div {
+       height: auto;
+       width: 48%;
+       max-width: 550px;
+       margin-left: 0;
+       padding: 20px;
+    }
+ 
+    .about, .contact {
+       font-size: 2rem; 
+       width: 85%;
+    }
+    
+ 
+    .me, .sk {
+       font-size: 1.2rem; 
+       line-height: 20px;
+       padding: 1.2rem;
+    }
+    
+    .sk{
+       margin-bottom: 1rem;
+       margin-left: 7%;
+       line-height: 2rem;
+       font-size: 1.5;
+    }
+ 
+    
+    .name-container {
+       margin-top: 1rem; 
+    }
+    
+    .fname {  
+       font-size: 7vw; 
+       padding: 1rem 0; 
+    }
+    
+    .lname {
+       font-size: 5vw; 
+       padding: 0.5rem 0; 
+      
+    }
+    
+    .right-div-data{
+       margin-top: 2rem;
+       padding-top: 1rem;
+       }
+ 
+ .edu {
+ 
+    font-size: 2.5rem; 
+    width: 90%;
+ 
+ }
+ 
+ .sk-head {
+    margin-top: 3rem ;
+ }
+ 
+ .study { 
+    font-size: 1.5rem; 
+  margin-top: 1.5rem;
+ }
+ 
+ .schl {
+    font-size: 1.2rem;
+ }
+    
+   #contact-heading{
+       font-size: 1.6rem;
+    }
+ 
+    .contact-me{
+       font-size: 1rem;
+       margin-bottom: 10px;
+       padding: 5px;
+       width: 80%;
+    }
+ 
+    #toggle-btn {
+       padding: 0.8rem 1rem;
+       font-size: 1.2rem;
+       border-radius: 5px;
+       margin-top: 1rem;
+    }
+ }
+ 
+ 
+ @media only screen and (min-width: 768px) and (max-width: 992px) {
+    #left-div, #right-div {
+      
+       box-sizing: border-box;
+    }
+ 
+    #right-div {
+       margin-left: 0;
+    }
+ 
+    #left-div {
+       height: auto;
+       width: 30%; 
+       margin-right: 0;
+    
+    
+    }
+    
+    #right-div {
+       height: auto;
+       width: 50%; 
+       margin-left: 0;
+       padding: 20px;
+    }
+ 
+    #top {
+       width: 100%;
+       height: 2rem;
+       margin-bottom: 1rem;
+       font-size: 1.5rem;
+    }
+ 
+ 
+    .about, .skill, .contact {
+       font-size: 1.4rem; 
+       width: 90%;
+    }
+ 
+ 
+    .me, .sk {
+       font-size: 1rem; 
+       line-height: 1.2rem;
+       padding: 1rem;
+    }
+    
+    .sk{
+       margin-bottom: 1rem;
+       margin-left: 7%;
+       line-height: 2rem;
+       font-size: 1.5rem;
+    }
+ 
+    .contact-me{
+       font-size: small;
+       width: 90%;
+    }
+    
+    .name-container {
+       margin-top: 1rem; 
+    }
+    
+    .fname { 
+       padding: 0.6rem 0; 
+    }
+ 
+    .right-div-data{
+       margin-top: 2rem;
+       padding-top: 1rem;
+       }
+ 
+ .edu , .sk-head {
+ 
+    font-size: 2.5rem; 
+    width: 90%;
+ 
+ }
+ 
+ .study { 
+    font-size: 1.5rem; 
+  margin-top: 1.5rem;
+ }
+ 
+ .schl {
+    font-size: 1.2rem;
+ }
+ 
+ 
+ 
+ .language-name {
+   
+    font-size: 1.2rem;
+ 
+ }
+ 
+ .progress-bar {
+    border-radius: 4px; 
+    height: 7px;
+ }
+ 
+ #skill-div{
+    margin-top: 5%;
+ }
+ 
+ .progress-skill {
+    margin-bottom:2%;
+    width: 100%;
+ }
+ 
+ .progress-skill-bar {
+    width: 80%; 
+    border-radius: 3px; 
+    height: 5px;
+ 
+ }
+ 
+ .progress-bar-fill {
+ 
+    border-radius: 3px;
+ 
+ }
+ 
+ .progress-skill span {
+    font-size: 1.4rem;
+    flex-basis: 0%;
+ 
+ }
+ 
+ .sk-head{
+    margin-top: 2rem;
+    margin-bottom: 0%;
+   
+ }
+ 
+  }
+ 
+ 
+ 
+ @media only screen and (min-width: 600px) and (max-width: 768px) {
+  
+    #left-div, #right-div {
+      
+ box-sizing: border-box;   
+ }
+ 
+  
+ #left-div {
+    height: auto;
+    width: 30%; 
+    margin-right: 0;
+ 
+ 
+ }
+ 
+ #right-div {
+    height: auto;
+    width: 50%; 
+    margin-left: 0;
+    padding: 20px;
+ }
+ #top {
+   width: 100%;
+   height: 2rem;
+   margin-bottom: 0.5rem;
+   font-size: 1.2rem;
+ }
+ 
+ #img-div{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .img {
+   width: 80%;
+   height: 90%;
+   border: 2px solid black;
+   border-radius: 50%;
+ }
+ 
+ 
+ .line {
+    height: 0.3rem;
+ 
+ }
+    .about, .skill, .contact {
+       font-size: large; 
+       width: 85%;
+    }
+ 
+    .me, .sk {
+       font-size: small; 
+       line-height: 0.8rem;
+       padding: 0.5rem;
+    }
+    
+    .sk{
+       margin-bottom: 1rem;
+       margin-left: 10%;
+       line-height: 1.5rem;
+       font-size: 1.5;
+    }
+ 
+    #toggle {
+       width: 90%;
+       border-radius: 20px;
+       font-size: 1rem;
+       margin: 20px auto;
+       padding: 5px; 
+    }
+      
+ 
+    .right-div-data{
+       margin-top: 0.5rem;
+       padding-top: 0.5rem;
+       }
+ 
+ .edu , .sk-head {
+    font-size: 2rem; 
+    width: 90%;
+ 
+ }
+ 
+ .study { 
+    font-size: 1.2rem; 
+  margin-top: 1.5rem;
+ }
+ 
+ .schl {
+    font-size: 1rem;
+ }
+ 
+ .language-name { 
+    font-size: 1.1rem;
+ 
+ }
+ 
+ .progress-bar {
+    border-radius: 4px; 
+    height: 5px;
+ }
+ 
+ #skill-div{
+    margin-top: 5%;
+ }
+ 
+ .progress-skill {
+    margin-bottom:2%;
+    width: 100%;
+ }
+ 
+ .progress-skill-bar {
+    width: 80%; 
+    border-radius: 3px; 
+    height: 5px;
+ 
+ }
+ 
+ .progress-bar-fill {
+ 
+    border-radius: 3px;
+ 
+ }
+ 
+ .progress-skill span {
+    font-size: 1.2rem;
+ 
+ 
+ }
+ 
+ .sk-head{
+    margin-top: 2rem;
+    margin-bottom: 0%;
+   
+ }
+ 
+ 
+ #toggle-btn {
+    padding: 0.6rem 0.6rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+ }
+ }
+ 
+ 
+ 
+ @media only screen and (max-width: 600px) {
+  
+    #left-div, #right-div {
+       padding: 0.5rem;
+ box-sizing: border-box;   
+ }
+ 
+ #top {
+    width: 100%;
+    height: 1.5rem;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+ }
+  
+ #left-div {
+    height: auto;
+    width: 40%; 
+    margin-right: 0;
+ }
+ 
+ #right-div {
+    height: auto;
+    width: 60%; 
+    margin-left: 0;
+    padding: 20px;
+ }
+ #img-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .img {
+    width: 80%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 50%;
+ }
+ 
+ #left-div-data{
+    margin-top: 0.7rem;
+ width: 100%;
+ }
+ 
+ .me, .sk {
+    font-size: 60%; 
+    line-height: 0.7rem;
+    padding: 0.1rem;
+ }
+ 
+ .sk{
+    margin-bottom: 1rem;
+    margin-left: 10%;
+    line-height: 1.2rem;
+    font-size: 70%;
+ }
+ 
+ .fname { 
+   
+    font-size: 8vw; 
+ padding: 5px;
+ }
+ 
+ .lname { 
+    font-size: 5vw; 
+    margin: 0;  
+    letter-spacing: 0.2rem; 
+    padding-top: 5px; 
+ }
+ 
+ 
+ .line {
+    height: 0.2rem;
+    
+ }
+ 
+    .contact-me{
+       padding: 0%;
+       font-size: xx-small;
+       width: 100%;
+    }
+   
+    #toggle {
+       width: 100%;
+       border-radius: 20px;
+       font-size: 0.5rem;
+       margin: 20px auto;
+       padding: 2px; 
+    }
+ 
+    .about, .skill, .contact {
+       font-size: 1rem; 
+       width: 100%;
+       padding: 3px 0;
+       margin-bottom: 0.5rem;
+    }
+ 
+    .contact{
+       margin-top: 0%;
+    }
+    .lang-head{
+       margin-top: 15%;
+    }
+    .language-container{
+       margin-top: 5px;
+    }
+ .right-div-data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    width: 100%;
+    }
+    
+    .edu , .sk-head {
+       font-size: 1.2rem; 
+       width: 100%;
+       margin-top: 5%;
+ 
+    }
+     
+    .sk-head{
+       margin-left: 0%;
+    }
+    .right-upper, .edu{
+       margin-left: 0rem;
+    }
+    .study {
+       font-size: 0.8rem; 
+       width: 100%;
+       text-align: start;
+     margin-top: 0.5rem;
+    }
+ 
+    .schl {
+       color: rgb(91, 89, 89);
+       font-size: 0.7rem;
+       width: 100%;
+       text-align: left;
+       font-style: oblique;
+    }
+ 
+    .language-name { 
+       font-size: 0.8rem;
+    
+    }
+    
+    .language{
+       margin-bottom: 10%;
+    }
+    .progress-bar {
+       border-radius: 4px; 
+       height: 4px;
+    }
+ 
+  
+    #skill-div{
+       margin-top: 5%;
+       margin-left: 0%;
+    }
+    
+    .skill{
+       margin-bottom: 0%;
+    }
+    .progress-skill {
+       margin-bottom:0%;
+       width: 100%;
+    }
+    
+    .progress-skill-bar {
+       height: 4px;
+    
+    }
+   
+    .progress-skill span {
+       font-size: 0.8rem;   
+    }
+    
+    .sk-head{
+       margin-top: 1.2rem;
+       margin-bottom: 0%;
+      
+    }
+ 
+    #toggle-btn {
+       padding: 0.4rem 0.4rem;
+       font-size: 0.7rem;
+       border-radius: 5px;
+ 
+       margin-top: 1rem;
+    }
+ }
+
+
+ .toggle-section {
+    display: none;
+  }
+  
+
+  .toggle-section.show-skills {
+    display: block;
+  }
